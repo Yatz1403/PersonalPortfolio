@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="width = device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Personal Portfolio Yatish</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <h1 class="logo">Yatish Reddy</h1>
+            <ul class="nav-links-container">
+                <li class="nav-links"><a href="#home-section" class="links">home</a></li>
+                <li class="nav-links"><a href="#about-section" class="links">about</a></li>
+                <li class="nav-links"><a href="#project-section" class="links">projects</a></li>
+                <li class="nav-links"><a href="#contact-section" class="links">contact</a></li>
+            </ul>
+        </nav>
+
+        <!--header-->
+
+        <header class="header" id="home-section">
+            <div class="content">
+                <h1 class="header-heading">Hey, I am <span class="brand-name">Yatish <span>Reddy</span></h1>
+                <a href="#"  onclick="sendEmail()" class="btn">Hire</a>
+            </div>
+
+            <div class="header-img-container">
+                <div class="circle">
+
+                </div>
+                <img src="img/my-img.png">
+            </div>
+        </header>
+
+        <section id="about-section">
+            <h1 class="heading">about me</h1>
+            <div class="about-container">
+                <div class="image-container">
+                    <div class="square"></div>
+                    <img src="img/my-img.jpg" class="about-img">
+                    <div class="social-links">
+                        <a href="https://github.com/Yatz1403"><img src="img/github.png" class="social-img"></a>
+                        <a href="www.linkedin.com/in/yatish-reddy-14477627a"><img src="img/linked.png" class="social-img"></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>I am a Data Scientist and ML Engineer with expertise in AI, deep learning, and cybersecurity. I have experience in building ML models, real-time data processing, and full-stack web development using HTML, CSS, JavaScript, and the MERN stack.
+                        I have worked on projects like violence detection, tuberculosis detection, an ML-powered Intrusion Prevention System, and an autonomous bot using ROS.</p>
+                        <a href="#" onclick="sendEmail()" class="btn">Hire me</a>
+                        <a href="resume.pdf" download="C:\Webdev\Portfolio\img\YatishResumeML (1).pdf" class="btn">Download CV</a>
+                </div>
+            </div>
+
+            <!--skills-->
+            <h2 class="sub-heading">skills</h2>
+            <div class="skills">
+                <p class="skill-name">HTML</p>
+                <p class="skill-name">CSS</p>
+                <p class="skill-name">JavaScript</p>
+                <p class="skill-name">Python</p>
+                <p class="skill-name">Machine learning</p>
+                <p class="skill-name">Neural Networks</p>
+                <p class="skill-name">AI Fundamentals</p>
+                <p class="skill-name">Cybersecurity Professional</p>
+                <p class="skill-name">APIs</p>
+                <p class="skill-name">Data Engineering</p>
+                <p class="skill-name">More</p>
+            </div>
+
+            <h2 class="sub-heading">Education and Experiences</h2>
+                <div class="timeline">
+                    <div class="card-container">
+                        <div class="card">
+                            <h1 class="card-title">Apr 2024- June 2024</h1>
+                            <p class="card-body">Developed a real-time violence detection model leveraging LSTM and CNN architectures, utilizing RTSPstreams, OpenCV,and Python. Led a team of three, enhancing the ML model's accuracy from 88.6% to 97%.Extracted frames. Implemented frame extraction from live video streams and applied advanced preprocessing techniques, creatingacomprehensive dataset for model training using TensorFlow and Python.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card">
+                            <h1 class="card-title">Dec 2023- Jan2024</h1>
+                            <p class="card-body">Conducted data analysis to identify optimization opportunities and areas for improvement. Utilized tools such as Power BI and MS Excel to create data visualizations and dashboards for effective data communication. Employed the MECE(Mutually Exclusive, Collectively Exhaustive) framework to systematically solve complex case-based projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card">
+                            <h1 class="card-title">Sept 2023- Oct2023</h1>
+                            <p class="card-body">Optimized PMIO schematics and assisted in developing the schematics. Assisted in the development of ZCU-670 RF SoC for 5G scalability. Assisted in the development of DFE for the interaction between AFE unit and base band unit.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="project-section">
+            <h1 class="heading"> Projects </h1>
+
+            <div class="filter">
+                <button class="btn filter-btn active">all</button>
+                <button class="btn filter-btn">Web development</button>
+                <button class="btn filter-btn">complex Machine learning</button>
+                <button class="btn filter-btn">AI/Robotics</button>
+            </div>
+
+            <div class="project-container">
+                <!--<div class="project-card active">
+                    <div class="project-wrapper">
+                        <div class="project-thumbnail">
+                            <img src="img/close.png" class="close-btn">
+                            <img src="img/project-1.png" class="project-img">
+                            <span class="tags">#CNN, #CSDA, #TensorFlow</span>
+                        </div>
+                        <div class="project-body">
+                            <h1 class="project name">TB Detection using CDAMNet</h1>
+                            <p class="project-detail">Developed and deployed a custom Convolution Neural Networkincorporatingadvanced Swish activations, Multi-Fusion Residual (MFR) blocks, and Channel Shuffle Dual Attention(CSDA) modulesfor enhanced feature extraction and classification accuracy. Utilized TensorFlow and Keras frameworksformodelconstruction and training, achieving significant performance improvements. Employed OpenCV for automatedimagepreprocessing and implemented learning rate scheduling and checkpointing for optimization. Led a teamtoelevatemodel accuracy from 88.6% to 97%, demonstrating strong leadership and technical prowess in deeplearningandimage classification.</p>
+                            <a href="#" class="btn">github</a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <section id="contact-section">
+            
+            <div class="form">
+                <button class="btnn" <a href="#" onclick="sendEmail()"></a>contact
+                    
+                </button>
+            </div>
+        </section>
+
+
+        <script src="project.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
